@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-lg-12">
+        <uib-alert type="info" close="dismissAlert()" ng-show="!has_seen_alert">
+            {{'WELCOME' | translate}}
+        </uib-alert>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-user fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right" ng-init="stats['users'] = 0">
+                        <div class="huge">{{ stats["users"] | number:0 }}</div>
+                        <div>{{'QUANTITY' | translate}}</div>
+                    </div>
+                </div>
+            </div>
+            <a ui-sref="list({entity:'user'})">
+                <div class="panel-footer">
+                    <span class="pull-left">{{'VIEW_LIST' | translate}}</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</div>

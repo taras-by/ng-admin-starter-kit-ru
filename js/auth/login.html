@@ -1,0 +1,8 @@
+<div class="container">
+    <form class="form-login">
+        <h1>{{'PLEASE_LOGIN' | translate}}</h1>
+        <input type="email" ng-model="email" class="form-control input-lg" placeholder="Email" required autofocus>
+        <input type="password" ng-model="password" class="form-control input-lg" placeholder="{{'PASSWORD' | translate}}" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="sendLogin()">{{'LOGIN' | translate}}</button>
+    </form>
+</div>

@@ -1,0 +1,44 @@
+@import "~ng-admin/lib/sass/ng-admin.scss";
+
+.form-login {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 50px;
+}
+
+.form-login h1 {
+  margin: 0 0 15px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.form-login input {
+  margin-bottom: 15px;
+  padding: 7px 16px;
+  height: 40px;
+  border-radius: 3px;
+}
+
+#page-wrapper {
+  margin: 0;
+  padding: 0px 15px;
+}
+
+table.grid th:first-child{
+  width: 15px;
+}
+
+.ng-admin-column-id {
+  width: 50px;
+  text-align: right;
+}
+
+.ng-admin-column-actions {
+  width: 70px;
+  text-align: center;
+}
+
+.ng-admin-column-actions .btn .ng-scope {
+  display: none;
+}
